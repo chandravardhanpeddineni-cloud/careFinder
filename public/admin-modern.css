@@ -1,0 +1,659 @@
+.admin-modern-page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    background: radial-gradient(circle at 0 -15%, #e3ecfa 0, #f5f8fd 52%);
+}
+
+.admin-modern-page .eyebrow {
+    margin: 0 0 8px;
+    color: #2b4f9a;
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.admin-modern-sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    padding: 22px 16px;
+    border-right: 1px solid #d7dfef;
+    background: #1c2845;
+    color: #fff;
+}
+
+.admin-modern-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: inherit;
+    text-decoration: none;
+    margin-bottom: 26px;
+}
+
+.admin-modern-brand-mark {
+    width: 46px;
+    height: 46px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #4068d8, #1689c2);
+    font-weight: 800;
+}
+
+.admin-modern-brand small {
+    display: block;
+    margin-top: 2px;
+    color: #b9c8eb;
+}
+
+.admin-modern-nav {
+    display: grid;
+    gap: 8px;
+}
+
+.admin-modern-nav a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 12px;
+    border-radius: 10px;
+    color: #dde6fb;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.admin-modern-nav a svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+.admin-modern-nav a:hover,
+.admin-modern-nav a.active {
+    background: rgba(255, 255, 255, 0.14);
+    color: #fff;
+    transform: translateX(2px);
+}
+
+.admin-modern-main {
+    padding: 22px clamp(14px, 3vw, 28px);
+}
+
+.admin-modern-topbar {
+    position: sticky;
+    top: 12px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 18px;
+    padding: 12px 14px;
+    border: 1px solid #d7dfef;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 12px 36px rgba(24, 38, 66, 0.08);
+}
+
+.admin-mobile-brand {
+    display: none;
+    color: #1a233d;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.admin-modern-search {
+    display: grid;
+    grid-template-columns: 20px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin-modern-search svg {
+    width: 18px;
+    height: 18px;
+    fill: #5f6e88;
+}
+
+.admin-modern-search input {
+    min-height: 42px;
+    border: 1px solid #d7dfef;
+    border-radius: 10px;
+    padding: 0 12px;
+}
+
+.admin-modern-search button {
+    min-height: 42px;
+    border: 0;
+    border-radius: 10px;
+    padding: 0 14px;
+    background: #2b4f9a;
+    color: #fff;
+    font-weight: 800;
+}
+
+.admin-modern-title h1 {
+    margin: 2px 0 0;
+    font-size: 1.35rem;
+}
+
+.admin-modern-top-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.admin-modern-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.admin-modern-profile .avatar {
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    border-radius: 999px;
+    background: #dde8fb;
+    color: #35539e;
+    font-weight: 800;
+}
+
+.admin-modern-profile small {
+    display: block;
+    color: #5f6e88;
+}
+
+.admin-logout-btn {
+    min-height: 40px;
+    border: 0;
+    border-radius: 10px;
+    padding: 0 12px;
+    background: #ad3126;
+    color: #fff;
+    font-weight: 800;
+}
+
+.admin-modern-content {
+    display: grid;
+    gap: 16px;
+    animation: adminFadeIn 0.45s ease;
+}
+
+.admin-modern-alert {
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #c0d6ee;
+    background: #eef6fe;
+    color: #1e4c7d;
+    font-weight: 700;
+}
+
+.admin-modern-alert.error {
+    border-color: #f3c2bd;
+    background: #fff0ee;
+    color: #9f2d20;
+}
+
+.admin-modern-alert ul {
+    margin: 8px 0 0;
+    padding-left: 18px;
+}
+
+.admin-modern-welcome,
+.admin-modern-section {
+    padding: 18px;
+    border: 1px solid #d7dfef;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 10px 24px rgba(24, 38, 66, 0.07);
+}
+
+.admin-modern-welcome {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) 320px;
+    gap: 16px;
+    color: #fff;
+    background: linear-gradient(125deg, #2b4f9a, #1689c2);
+}
+
+.admin-modern-welcome .eyebrow {
+    color: #d6e6ff;
+}
+
+.admin-modern-welcome h1 {
+    margin: 0;
+    font-size: clamp(1.4rem, 2.8vw, 2.2rem);
+    line-height: 1.2;
+}
+
+.admin-modern-welcome p {
+    margin: 10px 0 0;
+    color: #e4efff;
+}
+
+.admin-modern-stats {
+    display: grid;
+    gap: 10px;
+}
+
+.admin-modern-stats article {
+    padding: 12px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.admin-modern-stats span {
+    display: block;
+    color: #d6e6ff;
+    font-size: 0.82rem;
+}
+
+.admin-modern-stats strong {
+    display: block;
+    margin-top: 4px;
+    font-size: 1.4rem;
+}
+
+.admin-modern-overview {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.admin-modern-overview article {
+    padding: 14px;
+    border: 1px solid #d7dfef;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 10px 24px rgba(24, 38, 66, 0.07);
+}
+
+.admin-modern-overview span {
+    color: #5f6e88;
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.admin-modern-overview strong {
+    display: block;
+    margin-top: 6px;
+    font-size: 1.55rem;
+}
+
+.admin-modern-overview p {
+    margin: 8px 0 0;
+    color: #6b788f;
+}
+
+.admin-modern-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.admin-modern-section-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.admin-modern-section-head h2 {
+    margin: 2px 0 0;
+}
+
+.admin-inline-link {
+    color: #2b4f9a;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.admin-quick-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.admin-quick-grid a {
+    min-height: 88px;
+    display: grid;
+    align-content: center;
+    gap: 4px;
+    padding: 12px;
+    border: 1px solid #d7dfef;
+    border-radius: 12px;
+    background: #f3f6fb;
+    text-decoration: none;
+    color: #1a233d;
+}
+
+.admin-quick-grid a span {
+    color: #5f6e88;
+    font-size: 0.86rem;
+}
+
+.admin-modern-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.admin-modern-form label {
+    display: grid;
+    gap: 6px;
+}
+
+.admin-modern-form label span {
+    color: #5f6e88;
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.admin-modern-form input,
+.admin-modern-form select,
+.admin-modern-form textarea,
+.inline-form select {
+    width: 100%;
+    min-height: 40px;
+    border: 1px solid #d7dfef;
+    border-radius: 10px;
+    padding: 0 10px;
+    background: #fff;
+}
+
+.admin-modern-form textarea {
+    min-height: 100px;
+    padding: 10px;
+    resize: vertical;
+}
+
+.admin-modern-form .full {
+    grid-column: 1 / -1;
+}
+
+.admin-submit {
+    min-height: 42px;
+    border: 0;
+    border-radius: 10px;
+    background: #2b4f9a;
+    color: #fff;
+    font-weight: 800;
+}
+
+.admin-recent-list {
+    display: grid;
+    gap: 10px;
+}
+
+.admin-recent-item {
+    padding: 12px;
+    border: 1px solid #d7dfef;
+    border-radius: 12px;
+    background: #f3f6fb;
+}
+
+.admin-recent-item strong {
+    display: block;
+}
+
+.admin-recent-item p {
+    margin: 5px 0 0;
+    color: #5f6e88;
+}
+
+.status-pill {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 8px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 800;
+}
+
+.status-pill.approved,
+.status-pill.confirmed {
+    background: #daf9eb;
+    color: #136248;
+}
+
+.status-pill.pending {
+    background: #fff2d6;
+    color: #986402;
+}
+
+.status-pill.rejected,
+.status-pill.cancelled {
+    background: #ffe1dd;
+    color: #92271d;
+}
+
+.admin-table-wrap {
+    overflow-x: auto;
+}
+
+.admin-table-modern {
+    width: 100%;
+    min-width: 760px;
+    border-collapse: collapse;
+}
+
+.admin-table-modern th,
+.admin-table-modern td {
+    padding: 12px;
+    border-bottom: 1px solid #d7dfef;
+    text-align: left;
+    vertical-align: top;
+}
+
+.admin-table-modern th {
+    color: #5f6e88;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+}
+
+.admin-table-modern td small {
+    display: block;
+    margin-top: 4px;
+    color: #6b788f;
+}
+
+.inline-form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.inline-form button {
+    min-height: 36px;
+    border: 0;
+    border-radius: 8px;
+    padding: 0 10px;
+    background: #2b4f9a;
+    color: #fff;
+    font-weight: 700;
+}
+
+.danger-button {
+    min-height: 36px;
+    border: 0;
+    border-radius: 8px;
+    padding: 0 10px;
+    background: #ad3126;
+    color: #fff;
+    font-weight: 700;
+}
+
+.admin-status-tracker {
+    display: grid;
+    gap: 12px;
+}
+
+.admin-tips-list {
+    display: grid;
+    gap: 10px;
+}
+
+.admin-tips-list article {
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #d7dfef;
+    background: linear-gradient(180deg, #fff, #f4f8fc);
+    color: #394d6e;
+    font-weight: 600;
+}
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 999px;
+    background: #e5ebf5;
+    overflow: hidden;
+}
+
+.progress span {
+    display: block;
+    height: 100%;
+    border-radius: 999px;
+}
+
+.progress.approved span {
+    background: linear-gradient(90deg, #0f9e74, #05785a);
+}
+
+.progress.pending span {
+    background: linear-gradient(90deg, #f0aa2b, #de8f00);
+}
+
+.progress.rejected span {
+    background: linear-gradient(90deg, #db4d40, #aa261b);
+}
+
+.admin-filter-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.admin-filter-chips a {
+    min-height: 34px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid #d7dfef;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #394d6e;
+    font-weight: 700;
+    background: #f3f6fb;
+}
+
+.admin-filter-chips a.active {
+    border-color: #2b4f9a;
+    background: #e8efff;
+    color: #1e3b7f;
+}
+
+.admin-modern-empty {
+    padding: 14px;
+    border: 1px dashed #d7dfef;
+    border-radius: 12px;
+    color: #6b788f;
+}
+
+@keyframes adminFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 980px) {
+    .admin-modern-page {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-modern-sidebar {
+        position: static;
+        height: auto;
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .admin-modern-nav {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .admin-modern-nav a {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .admin-modern-nav a span {
+        display: none;
+    }
+
+    .admin-modern-topbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .admin-modern-search {
+        width: 100%;
+    }
+
+    .admin-modern-overview,
+    .admin-modern-grid,
+    .admin-modern-welcome,
+    .admin-quick-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .admin-modern-main {
+        padding: 14px;
+    }
+
+    .admin-mobile-brand {
+        display: inline-flex;
+    }
+
+    .admin-modern-search {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-modern-search svg {
+        display: none;
+    }
+
+    .admin-modern-search button {
+        width: 100%;
+    }
+
+    .admin-modern-form {
+        grid-template-columns: 1fr;
+    }
+
+    .inline-form {
+        align-items: stretch;
+        flex-direction: column;
+    }
+}

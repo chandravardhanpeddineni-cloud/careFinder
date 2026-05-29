@@ -1,0 +1,746 @@
+.patient-modern-page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    background: radial-gradient(circle at 15% -10%, #d7f3ea 0, #f4f8f7 55%);
+}
+
+.patient-modern-page .eyebrow {
+    margin: 0 0 8px;
+    color: #0d8062;
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.patient-modern-sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    padding: 22px 16px;
+    border-right: 1px solid #dce3df;
+    background: #0f2522;
+    color: #fff;
+}
+
+.patient-modern-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: inherit;
+    text-decoration: none;
+    margin-bottom: 26px;
+}
+
+.patient-modern-brand-mark {
+    width: 46px;
+    height: 46px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #16a086, #1f7ae0);
+    font-weight: 800;
+}
+
+.patient-modern-brand small {
+    display: block;
+    margin-top: 2px;
+    color: #a6beb8;
+}
+
+.patient-modern-nav {
+    display: grid;
+    gap: 8px;
+}
+
+.patient-modern-nav a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 12px;
+    border-radius: 10px;
+    color: #d5e5e1;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.patient-modern-nav a svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+.patient-modern-nav a:hover,
+.patient-modern-nav a.active {
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    transform: translateX(2px);
+}
+
+.patient-modern-main {
+    padding: 22px clamp(14px, 3vw, 28px);
+}
+
+.patient-modern-topbar {
+    position: sticky;
+    top: 12px;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: minmax(280px, 1fr) auto;
+    gap: 14px;
+    align-items: center;
+    margin-bottom: 18px;
+    padding: 12px 14px;
+    border: 1px solid #dce3df;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 12px 36px rgba(16, 54, 45, 0.08);
+}
+
+.patient-mobile-brand {
+    display: none;
+    color: #17201c;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.patient-modern-search {
+    display: grid;
+    grid-template-columns: 20px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.patient-modern-search svg {
+    width: 18px;
+    height: 18px;
+    fill: #64706b;
+}
+
+.patient-modern-search input {
+    min-height: 42px;
+    border: 1px solid #dce3df;
+    border-radius: 10px;
+    padding: 0 12px;
+}
+
+.patient-modern-search button {
+    min-height: 42px;
+    border: 0;
+    border-radius: 10px;
+    padding: 0 14px;
+    background: #147c5f;
+    color: #fff;
+    font-weight: 800;
+}
+
+.patient-topbar-title h1 {
+    margin: 2px 0 0;
+    font-size: 1.35rem;
+    color: #17201c;
+}
+
+.patient-modern-top-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.patient-modern-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.patient-modern-profile .avatar {
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    border-radius: 999px;
+    background: #daf3eb;
+    color: #0c4f40;
+    font-weight: 800;
+}
+
+.patient-modern-profile small {
+    display: block;
+    color: #64706b;
+}
+
+.patient-logout-btn {
+    min-height: 40px;
+    border: 0;
+    border-radius: 10px;
+    padding: 0 12px;
+    background: #ad3126;
+    color: #fff;
+    font-weight: 800;
+}
+
+.patient-modern-content {
+    display: grid;
+    gap: 16px;
+    animation: patientFadeIn 0.45s ease;
+}
+
+.patient-modern-alert {
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #b6e2d3;
+    background: #e8fbf3;
+    color: #0f5c47;
+    font-weight: 700;
+}
+
+.patient-modern-alert-error {
+    border-color: #f3c2bd;
+    background: #fff0ee;
+    color: #9f2d20;
+}
+
+.patient-modern-alert ul {
+    margin: 8px 0 0;
+    padding-left: 18px;
+}
+
+.patient-modern-welcome,
+.patient-modern-section {
+    padding: 18px;
+    border: 1px solid #dce3df;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 10px 28px rgba(14, 44, 38, 0.08);
+}
+
+.patient-modern-welcome {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) 320px;
+    gap: 16px;
+    color: #fff;
+    background: linear-gradient(125deg, #0f6b54, #17516e);
+}
+
+.patient-modern-welcome .eyebrow {
+    color: #b8f6e3;
+}
+
+.patient-modern-welcome h1 {
+    margin: 0;
+    font-size: clamp(1.4rem, 2.8vw, 2.2rem);
+    line-height: 1.2;
+}
+
+.patient-modern-welcome p {
+    margin: 10px 0 0;
+    color: #d8f1ea;
+}
+
+.patient-modern-stats {
+    display: grid;
+    gap: 10px;
+}
+
+.patient-modern-stats article {
+    padding: 12px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.patient-modern-stats span {
+    display: block;
+    color: #c8ece2;
+    font-size: 0.82rem;
+}
+
+.patient-modern-stats strong {
+    display: block;
+    margin-top: 4px;
+    font-size: 1.4rem;
+}
+
+.patient-modern-section-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.patient-modern-section-head h2 {
+    margin: 2px 0 0;
+}
+
+.patient-quick-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.patient-quick-grid a {
+    min-height: 88px;
+    display: grid;
+    align-content: center;
+    gap: 4px;
+    padding: 12px;
+    border: 1px solid #dce3df;
+    border-radius: 12px;
+    background: #edf3f1;
+    text-decoration: none;
+    color: #17201c;
+}
+
+.patient-quick-grid a span {
+    color: #64706b;
+    font-size: 0.86rem;
+}
+
+.patient-inline-link {
+    color: #0c4f40;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.patient-doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.patient-doctor-card {
+    display: grid;
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 12px;
+    padding: 12px;
+    border: 1px solid #dce3df;
+    border-radius: 14px;
+    background: linear-gradient(180deg, #fff, #f6fbf9);
+}
+
+.patient-doctor-card img {
+    width: 100%;
+    height: 120px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.patient-doctor-card h3 {
+    margin: 0;
+    font-size: 1.04rem;
+}
+
+.patient-doctor-card p {
+    margin: 4px 0 0;
+    color: #64706b;
+}
+
+.patient-doctor-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.patient-doctor-tags span {
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: #e7f4f0;
+    color: #20584a;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.patient-doctor-footer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.patient-doctor-footer strong {
+    display: block;
+}
+
+.patient-doctor-footer small {
+    color: #64706b;
+}
+
+.patient-book-btn {
+    margin-top: 12px;
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #147c5f;
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.patient-top-rated-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.patient-top-rated-grid article {
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #dce3df;
+    background: #edf3f1;
+}
+
+.patient-top-rated-grid p {
+    margin: 6px 0 0;
+    color: #64706b;
+}
+
+.rating-row {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: #245548;
+    font-weight: 700;
+    font-size: 0.86rem;
+}
+
+.patient-modern-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.patient-appointments-list,
+.patient-reviews-list,
+.patient-records-list {
+    display: grid;
+    gap: 10px;
+}
+
+.patient-review-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.patient-review-actions {
+    margin-top: 10px;
+    display: grid;
+    gap: 8px;
+}
+
+.patient-review-edit summary {
+    cursor: pointer;
+    color: #0c4f40;
+    font-weight: 800;
+}
+
+.patient-review-edit-form {
+    margin-top: 10px;
+    display: grid;
+    gap: 10px;
+}
+
+.patient-review-edit-form label {
+    display: grid;
+    gap: 6px;
+}
+
+.patient-review-edit-form label span {
+    color: #64706b;
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.patient-review-edit-form select,
+.patient-review-edit-form textarea {
+    width: 100%;
+    border: 1px solid #dce3df;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.patient-review-edit-form select {
+    min-height: 40px;
+    padding: 0 10px;
+}
+
+.patient-review-edit-form textarea {
+    min-height: 90px;
+    padding: 10px;
+    resize: vertical;
+}
+
+.patient-review-edit-form button {
+    min-height: 38px;
+    border: 0;
+    border-radius: 10px;
+    padding: 0 12px;
+    background: #147c5f;
+    color: #fff;
+    font-weight: 800;
+}
+
+.patient-appointment-item,
+.patient-review-item,
+.patient-record-item {
+    padding: 12px;
+    border: 1px solid #dce3df;
+    border-radius: 12px;
+    background: #edf3f1;
+}
+
+.patient-appointment-item h3,
+.patient-record-item strong {
+    margin: 0;
+}
+
+.patient-appointment-item p,
+.patient-record-item p,
+.patient-review-item p {
+    margin: 6px 0 0;
+    color: #64706b;
+}
+
+.patient-appointment-item small {
+    color: #64706b;
+}
+
+.patient-appointment-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.patient-appointment-actions {
+    display: grid;
+    gap: 8px;
+    justify-items: end;
+}
+
+.patient-appointment-actions form button {
+    min-height: 32px;
+    border: 0;
+    border-radius: 8px;
+    padding: 0 10px;
+    background: #be3a2d;
+    color: #fff;
+    font-weight: 700;
+}
+
+.status-pill {
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 800;
+}
+
+.status-pill.pending {
+    background: #fff2d6;
+    color: #986402;
+}
+
+.status-pill.confirmed {
+    background: #daf9eb;
+    color: #136248;
+}
+
+.status-pill.cancelled {
+    background: #ffe1dd;
+    color: #92271d;
+}
+
+.patient-record-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.patient-record-item span {
+    color: #0c4f40;
+    font-weight: 700;
+    text-align: right;
+}
+
+.patient-filter-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.patient-filter-chips a {
+    min-height: 34px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid #dce3df;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #32504a;
+    font-weight: 700;
+    background: #edf3f1;
+}
+
+.patient-filter-chips a.active {
+    border-color: #0f9e74;
+    background: #daf9eb;
+    color: #136248;
+}
+
+.patient-status-tracker {
+    display: grid;
+    gap: 12px;
+}
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 999px;
+    background: #e4efec;
+    overflow: hidden;
+}
+
+.progress span {
+    display: block;
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #f0aa2b, #de8f00);
+}
+
+.progress.confirmed span {
+    background: linear-gradient(90deg, #0f9e74, #05785a);
+}
+
+.progress.cancelled span {
+    background: linear-gradient(90deg, #db4d40, #aa261b);
+}
+
+.patient-health-tips {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.patient-health-tips article {
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #dce3df;
+    background: linear-gradient(180deg, #fff, #f7fcfa);
+    color: #32504a;
+    font-weight: 600;
+}
+
+.patient-modern-empty {
+    padding: 14px;
+    border: 1px dashed #dce3df;
+    border-radius: 12px;
+    color: #64706b;
+}
+
+@keyframes patientFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 980px) {
+    .patient-modern-page {
+        grid-template-columns: 1fr;
+    }
+
+    .patient-modern-sidebar {
+        position: static;
+        height: auto;
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .patient-modern-nav {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .patient-modern-nav a {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .patient-modern-nav a span {
+        display: none;
+    }
+
+    .patient-modern-topbar {
+        grid-template-columns: 1fr;
+    }
+
+    .patient-modern-welcome,
+    .patient-modern-grid,
+    .patient-doctor-grid,
+    .patient-top-rated-grid,
+    .patient-health-tips,
+    .patient-quick-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .patient-appointment-item,
+    .patient-record-item {
+        flex-direction: column;
+    }
+
+    .patient-appointment-actions {
+        justify-items: start;
+    }
+}
+
+@media (max-width: 640px) {
+    .patient-modern-main {
+        padding: 14px;
+    }
+
+    .patient-modern-brand {
+        margin-bottom: 12px;
+    }
+
+    .patient-modern-top-actions {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .patient-modern-search {
+        grid-template-columns: 1fr;
+    }
+
+    .patient-modern-search svg {
+        display: none;
+    }
+
+    .patient-modern-search button {
+        width: 100%;
+    }
+
+    .patient-mobile-brand {
+        display: inline-flex;
+    }
+
+    .patient-doctor-card {
+        grid-template-columns: 1fr;
+    }
+
+    .patient-doctor-card img {
+        height: 180px;
+    }
+}
